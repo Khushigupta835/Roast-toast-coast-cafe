@@ -1,0 +1,77 @@
+========================================================
+  ROAST TOAST COAST CAFE — REQUIREMENTS
+  Derived from README.md
+========================================================
+
+PROJECT TYPE
+------------
+Static website — HTML, CSS, Vanilla JavaScript only.
+No package manager, no build tool, no framework required.
+
+
+INSTALLABLE DEPENDENCIES
+------------------------
+NONE. This project has zero installable dependencies.
+No npm install, pip install, or any other package command
+is needed.
+
+
+RUNTIME REQUIREMENTS
+--------------------
+1. A modern web browser (see Browser Requirements below).
+2. An active internet connection for:
+   - Bogart Light web font
+     Source : https://fonts.cdnfonts.com/s/24702/
+     Formats: woff2 (preferred), woff (fallback)
+   - Cafe hero background image
+     Source : https://images.unsplash.com/
+     Format : JPEG
+
+   NOTE: If either CDN is unreachable, the page degrades
+   gracefully — sans-serif font and black background panel.
+
+
+BROWSER REQUIREMENTS
+--------------------
+No polyfills or transpilation required.
+The following native browser features must be supported:
+
+  Feature                  Min. Version
+  -----------------------  -----------------------------------
+  CSS Grid                 Chrome 57+, Firefox 52+,
+                           Safari 10.1+, Edge 16+
+  CSS Flexbox              Chrome 29+, Firefox 28+,
+                           Safari 9+, Edge 12+
+  @font-face (woff2)       Chrome 36+, Firefox 35+,
+                           Safari 10+, Edge 14+
+  document.querySelector   All modern browsers
+  classList.toggle()       Chrome 8+, Firefox 3.6+,
+                           Safari 5.1+, Edge 12+
+
+
+OPTIONAL LOCAL SERVER (to avoid file:// quirks)
+------------------------------------------------
+Option A — Node.js (v14+ recommended):
+  npx serve .
+  Open: http://localhost:3000
+
+Option B — Python 3:
+  python -m http.server
+  Open: http://localhost:8000
+
+
+FILES
+-----
+  index.html        Original cafe landing page
+  KhushiGupta.html  Revised page with all bugs fixed
+  README.md         Full project documentation
+  Requirments.txt   This file
+
+
+KNOWN LIMITATIONS
+-----------------
+- No responsive breakpoints; layout breaks below ~600px.
+- Hero image URL is pinned to a specific Unsplash crop.
+- Web font served by third-party CDN (no SLA).
+
+========================================================
